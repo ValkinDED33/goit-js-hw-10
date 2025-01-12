@@ -1,0 +1,123 @@
+/* Основные стили для всей страницы */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Стили для формы */
+form {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 400px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Поля ввода */
+label {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  color: #333;
+}
+
+input[type='number'] {
+  padding: 10px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  font-size: 16px;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+input[type='number']:hover {
+  border-color: #80bdff;
+}
+
+input[type='number']:focus {
+  outline: none;
+  border-color: #4a90e2;
+  box-shadow: 0 0 4px rgba(74, 144, 226, 0.5);
+}
+
+/* Радиокнопки */
+fieldset {
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  padding: 10px;
+}
+
+legend {
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+}
+
+input[type='radio'] {
+  margin-right: 8px;
+}
+
+label input[type='radio']:hover {
+  cursor: pointer;
+}
+
+label input[type='radio']:checked + span {
+  font-weight: bold;
+  color: #4a90e2;
+}
+
+/* Кнопка */
+button {
+  padding: 12px;
+  background-color: #4a90e2;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #357ab7;
+}
+
+button:active {
+  background-color: #285a8e;
+}
+
+/* Стили уведомлений iziToast */
+.iziToast-success {
+  background-color: #38a169 !important; /* Зеленый для success */
+  color: white !important;
+}
+
+.iziToast-error {
+  background-color: #e53e3e !important; /* Красный для error */
+  color: white !important;
+}
+
+.iziToast-warning {
+  background-color: #dd6b20 !important; /* Оранжевый для caution */
+  color: white !important;
+}
+
+.iziToast-info {
+  background-color: #3182ce !important; /* Голубой для informing */
+  color: white !important;
+}
+
+/* Отступы для уведомлений */
+.iziToast {
+  margin-top: 10px;
+}
